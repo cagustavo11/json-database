@@ -4,7 +4,13 @@ import json
 def clearJSON(jsonName):
     # Creo la estructura basica y por defecto con la lista vacia
     data = {
-        "results": []
+        "results": [
+            # {
+            #     'name': '',
+            #     'age': '',
+            #     'city': '',
+            # }
+        ]
     }
     # Abro el archivo json  y además establezco la acción de 'write', que significa escritura.
     openJson = open(f'{jsonName}.json', 'w')
