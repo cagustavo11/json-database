@@ -18,3 +18,4 @@ def clearJSON(jsonName):
     # en el interior del método write ejecuto otro método que es el json.dumps que me permite convertir la sintaxis de python a formato json.
     openJson.write(json.dumps(data, indent=4))
     openJson.close()
+    return data['results']
